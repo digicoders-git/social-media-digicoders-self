@@ -1,0 +1,153 @@
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaWhatsapp,
+  FaTelegram,
+  FaGoogle,
+} from "react-icons/fa";
+
+import logo from "./assets/logo.png";
+
+function App() {
+  const socialCategories = [
+    {
+      title: "Social Presence",
+      links: [
+        {
+          name: "Facebook",
+          icon: <FaFacebook className="text-[#1877F2]" />,
+          url: "https://www.facebook.com/DigiCodersTech/",
+        },
+        {
+          name: "LinkedIn",
+          icon: <FaLinkedin className="text-[#0A66C2]" />,
+          url: "https://www.linkedin.com/company/digicoders/",
+        },
+        {
+          name: "Twitter (X)",
+          icon: <FaTwitter className="text-black" />,
+          url: "https://twitter.com/DigiCodersTech/",
+        },
+      ],
+    },
+    {
+      title: "Instagram Presence",
+      links: [
+        {
+          name: "DigiCoders Main",
+          icon: <FaInstagram className="text-pink-500" />,
+          url: "https://www.instagram.com/digicoderstech/",
+        },
+        {
+          name: "DigiCoders Kanpur",
+          icon: <FaInstagram className="text-pink-500" />,
+          url: "https://www.instagram.com/digicoderstech_kanpur/",
+        },
+        {
+          name: "Life At DigiCoders",
+          icon: <FaInstagram className="text-pink-500" />,
+          url: "https://www.instagram.com/lifeatdigicoders/",
+        },
+      ],
+    },
+    {
+      title: "Media & Community",
+      links: [
+        {
+          name: "YouTube",
+          icon: <FaYoutube className="text-[#FF0000]" />,
+          url: "https://www.youtube.com/@digicoders?sub_confirmation=1",
+        },
+        {
+          name: "WhatsApp Channel",
+          icon: <FaWhatsapp className="text-[#25D366]" />,
+          url: "https://whatsapp.com/channel/0029VaDTIxW5EjxzOyubYT3l",
+        },
+        {
+          name: "Telegram Channel",
+          icon: <FaTelegram className="text-[#229ED9]" />,
+          url: "https://t.me/digicoderstech",
+        },
+      ],
+    },
+    {
+      title: "Trust & Reviews",
+      links: [
+        {
+          name: "Google Reviews",
+          icon: <FaGoogle className="text-[#4285F4]" />,
+          url: "https://g.page/r/CbvslPTNBDDqEAE/review",
+        },
+      ],
+    },
+  ];
+
+  return (
+    <div className="bg-white text-gray-800 font-sans">
+      {/* HERO SECTION */}
+      <section className="w-full flex flex-col items-center justify-center text-center px-4 pt-2 bg-gray-50 sm:py-10">
+        <img
+          src={logo}
+          alt="DigiCoders Logo"
+          className="h-20 sm:h-28 md:h-40 lg:h-48 "
+        />
+
+        <p className="text-gray-600 mt-3 max-w-xl text-sm sm:text-base ">
+          A Company Leading by Young Engineer's, Enterpreneur's and Innovation
+          Team | 10+ Years of Exeperienced Team
+        </p>
+
+        {/* <a
+          href="#socials"
+          className="mt-8 inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
+        >
+          Connect With Us
+        </a> */}
+      </section>
+
+      {/* SOCIAL LINKS SECTION */}
+      <section id="socials" className="py-2 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
+            Our <span className="text-green-600">Social Presence</span>
+          </h2>
+
+          {socialCategories.map((category, index) => (
+            <div key={index} className="mb-12">
+              <h3 className="text-lg sm:text-xl font-semibold mb-6 text-gray-800">
+                {category.title}
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                {category.links.map((link, idx) => (
+                  <a
+                    key={idx}
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-4 p-5 bg-white rounded-2xl border border-gray-200 hover:border-green-500 hover:shadow-md hover:scale-[1.03] transition-all duration-300"
+                  >
+                    <div className="text-2xl">{link.icon}</div>
+                    <span className="font-medium text-gray-700">
+                      {link.name}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="text-center py-6 text-gray-500 text-sm bg-white border-t">
+        © {new Date().getFullYear()} DigiCoders Technologies Pvt. Ltd. | Lucknow
+      </footer>
+    </div>
+  );
+}
+
+export default App;
