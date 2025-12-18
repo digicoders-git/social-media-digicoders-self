@@ -95,13 +95,15 @@ function App() {
           className="h-20 sm:h-28 md:h-40 lg:h-48 "
         />
 
-        <p className="text-gray-600 flex flex-col mt-3 max-w-3xl sm:max-w-full  uppercase">
-          <span className="font-bold text-[#0f6a6a] sm:max-w-full">
-            "A Company Leading by Young Engineer's, Enterpreneur's and
-            Innovation Team"
-          </span>
-          <span className="text-[#fb9557] font-bold">10+ Years of Exeperienced Team</span>
-        </p>
+        <p className="font-poppins text-gray-600 flex flex-col mt-3 max-w-3xl sm:max-w-full uppercase">
+  <span className="font-bold text-[#0f6a6a] sm:max-w-full">
+    "A Company Leading by Young Engineer's, Enterpreneur's and Innovation Team"
+  </span>
+  <span className="text-[#fb9557] font-bold">
+    10+ Years of Experienced Team
+  </span>
+</p>
+
 
         {/* <a
           href="#socials"
