@@ -37,7 +37,7 @@ function App() {
       title: "Instagram Presence",
       links: [
         {
-          name: "DigiCoders Main",
+          name: "DigiCoders Head Office",
           icon: <FaInstagram className="text-pink-500" />,
           url: "https://www.instagram.com/digicoderstech/",
         },
@@ -88,16 +88,19 @@ function App() {
   return (
     <div className="bg-white text-gray-800 font-sans">
       {/* HERO SECTION */}
-      <section className="w-full flex flex-col items-center justify-center text-center px-4 pt-2 bg-gray-50 sm:py-10">
+      <section className="w-full flex flex-col items-center justify-center text-center px-4 pt-2 bg-gray-50 sm:py-10 py-10">
         <img
           src={logo}
           alt="DigiCoders Logo"
           className="h-20 sm:h-28 md:h-40 lg:h-48 "
         />
 
-        <p className="text-gray-600 mt-3 max-w-xl text-sm sm:text-base ">
-          A Company Leading by Young Engineer's, Enterpreneur's and Innovation
-          Team | 10+ Years of Exeperienced Team
+        <p className="text-gray-600 flex flex-col mt-3 max-w-3xl sm:max-w-full  uppercase">
+          <span className="font-bold text-[#0f6a6a] sm:max-w-full">
+            "A Company Leading by Young Engineer's, Enterpreneur's and
+            Innovation Team"
+          </span>
+          <span className="text-[#fb9557] font-bold">10+ Years of Exeperienced Team</span>
         </p>
 
         {/* <a
@@ -109,9 +112,9 @@ function App() {
       </section>
 
       {/* SOCIAL LINKS SECTION */}
-      <section id="socials" className="py-2 px-4 bg-gray-50">
+      <section id="socials" className="pt-2 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-5">
             Our <span className="text-green-600">Social Presence</span>
           </h2>
 
