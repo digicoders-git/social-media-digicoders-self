@@ -77,9 +77,14 @@ function App() {
       title: "Trust & Reviews",
       links: [
         {
-          name: "Google Reviews",
+          name: "Write Google Reviews",
           icon: <FaGoogle className="text-[#4285F4]" />,
           url: "https://g.page/r/CbvslPTNBDDqEAE/review",
+        },
+        {
+          name: "Read Google Reviews",
+          icon: <FaGoogle className="text-[#4285F4]" />,
+          url: "https://www.google.com/maps/place/DigiCoders+Technologies+Private+Limited,+Best+Software%2FWebsite%2FMobile+App+Development+Company+in+Lucknow/@26.9046469,80.9470183,17z/data=!4m18!1m9!3m8!1s0x399bfd90f852511b:0xea3004cdf494ecbb!2sDigiCoders+Technologies+Private+Limited,+Best+Software%2FWebsite%2FMobile+App+Development+Company+in+Lucknow!8m2!3d26.9046421!4d80.9495932!9m1!1b1!16s%2Fg%2F11h37gc4sq!3m7!1s0x399bfd90f852511b:0xea3004cdf494ecbb!8m2!3d26.9046421!4d80.9495932!9m1!1b1!16s%2Fg%2F11h37gc4sq?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D",
         },
       ],
     },
@@ -114,7 +119,7 @@ function App() {
       </section>
 
       {/* SOCIAL LINKS SECTION */}
-      <section id="socials" className="pt-2 px-4 bg-gray-50">
+      <section id="socials" className="pt-2 px-4 bg-gray-50 border-b">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-5">
             Our <span className="text-green-600">Social Presence</span>
@@ -148,7 +153,7 @@ function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="text-center py-6 text-gray-500 text-sm bg-white border-t">
+      <footer className="text-center py-6 text-gray-500 text-sm bg-white ">
         © {new Date().getFullYear()} DigiCoders Technologies Pvt. Ltd. | Lucknow
       </footer>
     </div>
